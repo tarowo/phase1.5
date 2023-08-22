@@ -1,0 +1,251 @@
+a.button,
+input.button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:2px solid #3491EE;
+	padding:6px 8px;
+	color: #3491EE;
+	background-color: #000000;
+	font-weight: 900;
+	cursor: pointer;
+	margin-top:20px;
+}
+
+a.button:hover,
+input.button:hover {
+	border:2px solid #ffffff;	
+}
+
+label.invalid span.required_note{
+	display: inline!important;
+}
+
+
+
+.fakecheck {
+	font: 12px Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	outline: none;
+	background: url(/web/20120503235639im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/checkbox.gif) no-repeat;
+	height: 16px;
+	color: #666666;
+}
+
+.fakecheck:hover {
+	color:#0066FF;
+	text-decoration: underline;
+}
+
+.fakechecked {
+	background-position: left -25px;
+}
+
+a.fackchecker {
+	width:100%;	
+	display: block;
+	margin-top:-30px;
+	z-index:999;
+}
+
+tr.emi_optin a#fakeoptin {
+	margin-top:0px;	
+	width:80%;
+}
+
+a#faketandc {
+	margin-top:-37px;
+	margin-bottom:15px;	
+}
+
+tr.tandc .fakechecker {
+	line-height:140%;
+}
+
+span.fakechecker{
+	z-index:1;	
+	display: block;
+	cursor:pointer;
+	margin-left:25px;	
+}
+
+input.inputbox, textarea  {
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;	
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	padding:8px;
+	border:1px solid #DDDDDD;
+	background-color:#FFFFFF;
+}
+
+textarea {
+	padding: 16px;
+	width:90%;
+}
+
+fieldset {
+	border:0;
+}
+
+#newsMenu #selectbox_change {
+	margin-top: 0px;
+	padding: 4px;
+}
+
+td div.no_height {
+	line-height:130%;
+}
+
+td div.smaller {
+	font-size:.8em;
+}
+
+select#emi_COUNTRY {
+	width:100%;
+	padding:8px;
+	border:0px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;	
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+
+}
+
+form#tokenForm fieldset {
+	padding:0;	
+	margin:20px 0px;;
+}
+
+form#tokenForm fieldset#token > div {
+	float:left;
+}
+
+form#tokenForm fieldset#token .button {
+	margin-top:0;
+	margin-left: 30px;	
+}
+
+form#tokenForm fieldset#token {
+	display: block;
+}
+
+form#tokenForm table {
+	margin:20px 0px;	
+}
+
+form#tokenForm > div.pbcontent > .intro {
+	width:420px;	
+	text-align:left;
+	margin-left:20px;
+}
+
+form#tokenForm > div.pbcontent > .intro,
+form#tokenForm > .pbcontent img {
+	float: left;	
+}
+form#tokenForm > div.pbcontent > .intro h2 {
+	width:100%;	
+	text-align:left!important;
+}
+form#tokenForm fieldset#access_login {
+	width:36%;
+	float: left;
+}
+form#tokenForm fieldset#access_register {
+	width:60%;
+	float: right;
+}
+form#tokenForm fieldset#token{
+	padding:0 20px;	
+}
+
+.pbcontent ul {
+	margin-top:20px;	
+}
+.pbcontent ul li {
+	margin-left:20px;
+	background-repeat: no-repeat;
+	line-height:300%;
+	clear:left;
+}
+.pbcontent ul li img {
+	max-width:50px;
+}
+
+form#tokenForm fieldset#token div > a {
+	display: block;
+	float:left;
+}
+
+div.pbcontent{
+	margin-bottom:20px;
+}
+
+.reg_arrow{
+    margin:0 auto;
+    text-align:center;
+}
+
+form input#button_fb,
+#comment-form #button,
+form input.button {
+    margin-right: 0px;
+    float:left;
+}
+
+form input.fbuser {
+    padding-right: 30px;
+    background-image: url(/web/20120503235639im_/http://cdn.gorillaz.com/images/stories/update-g.png);
+    background-position: right 5px;
+    background-repeat: no-repeat;
+}
+
+form input#button_fb {
+    display: none;
+    background-image: url("/web/20120503235639im_/http://cdn.gorillaz.com/images/stories/update-g-f.png");
+    float: left!important;
+    padding-right: 70px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+form #save-status {
+    float: right;
+}
+
+#itemCommentsAnchor #button_fb {
+    margin-left:75px;
+}
+
+#comment-form #button_fb {
+    float:none;
+}
+
+form.avatarform #file-upload-submit {
+    margin-left: 10px;
+}
+/*
+     FILE ARCHIVED ON 23:56:39 May 03, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:35:14 Aug 22, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 207.622
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.06
+  cdx.remote: 0.05
+  esindex: 0.009
+  LoadShardBlock: 148.726 (3)
+  PetaboxLoader3.datanode: 173.837 (4)
+  load_resource: 122.001
+  PetaboxLoader3.resolve: 63.093
+*/

@@ -1,0 +1,159 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/*
+// "K2" Component by JoomlaWorks for Joomla! 1.5.x - Version 2.1
+// Copyright (c) 2006 - 2009 JoomlaWorks Ltd. All rights reserved.
+// Released under the GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+// More info at http://www.joomlaworks.gr and http://k2.joomlaworks.gr
+// Designed and developed by the JoomlaWorks team
+// *** Last update: September 9th, 2009 ***
+*/
+
+
+window.addEvent('domready', function(){
+	
+  // Comments
+    jQuery('#comment-form').live('submit',function(e){
+      new Event(e).stop();
+      var log2 = $('formLog').empty().addClass('formLogLoading');
+      this.send({
+        update: log2,
+        onComplete: function(res){
+          log2.removeClass('formLogLoading');
+  				if(typeof(Recaptcha) != "undefined"){ 
+						Recaptcha.reload();
+  				}
+          if (res.substr(13, 7) == 'success') {
+
+        		var args = location.search.substring(1, location.search.length).split('&'); // parse out name/value pairs separated via &
+        		var href= location.hostname+location.pathname+'?';
+        		
+        		// split out each name=value pair
+    			for (var i = 0; i < args.length; i++) {
+    				var pair = args[i].split('=');
+    				if( pair[1] == 'limitstart' ) continue;
+    				href += args[i]+'&';
+    			}
+
+    			href+='#itemCommentsAnchor ';
+    			
+    			if(href.indexOf('http://') != 0){
+    				redirect = 'http://'+href;
+    			} else {
+    				redirect = href;
+    			}
+    			
+    			if(typeof loadPage == 'function') {
+    				redirect = jQuery('#comment-form [name=refurl]').val();
+    				loadPage(redirect+'?tmpl=raw');
+    				return false;
+    			} else {
+    			
+    				window.location = redirect;
+    			}
+          }
+        }
+      });
+    });
+  
+  
+  // Text Resizer
+  if ($('fontDecrease')) {
+		$('fontDecrease').addEvent('click', function(e){
+			new Event(e).stop();
+			$$('.itemFullText').removeClass('largerFontSize');
+			$$('.itemFullText').addClass('smallerFontSize');
+		});
+  }
+  if ($('fontIncrease')) {
+		$('fontIncrease').addEvent('click', function(e){
+			new Event(e).stop();
+			$$('.itemFullText').removeClass('smallerFontSize');
+			$$('.itemFullText').addClass('largerFontSize');
+		});
+  }
+  
+  // Smooth Scroll
+  new SmoothScroll({
+      duration: 500
+  });
+  	
+	// Rating
+	if ($$('.itemRatingForm').length > 0) {
+		$$('.itemRatingForm a').addEvent('click', function(e){
+			e = new Event(e).stop();
+			var itemID = this.getProperty('rel');
+			var log = $('itemRatingLog' + itemID).empty().addClass('formLogLoading');
+			var rating = this.getText();
+			var url = "/index.php?option=com_k2&view=item&task=vote&user_rating=" + rating + "&itemID=" + itemID;
+			new Ajax(url, {
+				method: "get",
+				update: log,
+				onComplete: function(){
+					log.removeClass('formLogLoading');
+					new Ajax("/index.php?option=com_k2&view=item&task=getVotesPercentage&itemID=" + itemID, {
+						method: "get",
+						onComplete: function(percentage){
+							$('itemCurrentRating' + itemID).setStyle('width', percentage + "%");
+							setTimeout(function(){
+								new Ajax("/index.php?option=com_k2&view=item&task=getVotesNum&itemID=" + itemID, {
+									method: "get",
+									update: log
+								}).request();
+							}, 2000);
+						}
+					}).request();
+				}
+			}).request();
+		});
+	}
+});
+
+window.addEvent('load', function(){
+
+  // Equal block heights for the "default" view
+  if($$('.subCategory')){
+		var blocks = $$('.subCategory');
+		var maxHeight = 0;
+		blocks.each(function(item){
+			maxHeight = Math.max(maxHeight, parseInt(item.getStyle('height')));
+		});
+		blocks.setStyle('height', maxHeight);
+	}
+	
+});
+
+// End
+
+
+}
+/*
+     FILE ARCHIVED ON 01:52:32 May 04, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:35:15 Aug 22, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 503.953
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.089
+  cdx.remote: 0.062
+  esindex: 0.01
+  LoadShardBlock: 475.038 (3)
+  PetaboxLoader3.resolve: 411.248 (3)
+  PetaboxLoader3.datanode: 145.298 (4)
+  load_resource: 132.032
+*/

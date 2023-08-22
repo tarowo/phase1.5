@@ -1,0 +1,1472 @@
+body {
+	background: #000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	color: #ffffff;
+	background:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/gorillaz_diagonal2.gif) repeat;	
+}
+
+
+#header img.default {
+    display: none;
+}
+
+#main-window  {
+	float:left;
+	margin-left:15px;
+	width:630px !important;
+}
+#main-window.fullscreenParents{
+	width:100%!important;
+	height:100%!important;
+}
+#side-bar{
+	margin-left:30px;
+	width:300px;
+	float:left;
+}
+
+img {
+	border: none;	
+}
+
+a {
+	color: #2A93FF;
+	text-decoration: none;
+	outline: none;
+}
+.itemIntroText {
+	color: #ffffff!important;	
+}
+#header{ 
+	padding: 15px 0px;	
+	height:59px;
+}
+#footer,
+#wrapper {
+	margin: 0 auto;
+	max-width:1024px;
+	padding-bottom:15px;
+}
+#wrapper {
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/gorillaz_diagonal.gif);
+}
+
+#footer {
+	margin-top:10px;	
+	text-align:left;
+	border-top:5px solid #FCBD10;
+	padding-top:20px;
+	background-image:url('/web/20120503231954im_/http://cdn.gorillaz.com/images/stories/footerlogo.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+#footer a{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+#footer ul li {
+	display:inline;
+	margin:0px 15px;	
+}
+#container {
+	margin: 0 auto;
+	width:990px;
+}
+
+div#general {
+	color: #ffffff!important;	
+}
+
+.clr,
+.clrLeft  {
+	clear: both;
+	height:0;
+	overflow:hidden;
+}
+
+.clrLeft {
+	clear:left;	
+}
+
+div.infobox {
+	width: 600px;
+	margin:20px;
+	background-color: #000000;
+	margin: 40px auto;
+}
+div.content {
+	margin:20px;
+}
+
+/**
+Need rounded corners for js pages:
+*/
+#roundedCorners,
+#message,
+#content-main .vieweditDetails,
+#content-main .viewprivacy,
+#content-main .viewuploadAvatar,
+#content-main .viewedit,
+#content-main .viewappwalls,
+#content-main .viewinvite,
+#content-main .viewfriends,
+#content-main .viewsearch,
+#content-main .viewadvancesearch, 
+#content-main .viewsent,
+#content-main .viewpending,
+#content-main .viewready,
+#content-main .viewcomplete,
+#content-main .viewchallenges,
+#content-main .viewremove,
+#content-main .viewapprove,
+#content-main .viewreject,
+div.roundedCorners,
+#sbox-window,
+.buy-links {
+	border-radius: 14px;	
+	-webkit-border-radius:14px;
+	-moz-border-radius:14px;
+	border:solid 3px #333;
+}
+div#community-wrap.roundedCorners {
+	background: #000000;	
+}
+div.subboxBlack,
+div.subbox {
+	margin-top:10px;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bg_black_white.gif) repeat-x;
+}
+
+div.subboxBlack {
+	background:#000000;	
+}
+
+#cWindow {
+	color: #000000;	
+}
+
+.fl {
+	float: left!important;		
+}
+.fr {
+	float: right!important;	
+}
+
+#content-top {
+	display: block;
+	width:100%;
+	clear:both;
+	border-bottom: 3px solid yellow;
+	margin-bottom:30px;
+}
+
+#content-main {
+	padding: 0px 25px 25px 25px;
+}
+
+#main-window #content-main {
+	padding: 0px 15px 15px 15px;
+}
+
+#g-player-video-page #content-main {
+	padding: 0px 8px 8px 8px;
+}
+
+h1, h2 {
+	display: inline;
+	margin: 0px;
+}
+
+#g-player-page h2 {
+	display: block;
+}
+
+.title {
+	color: #FCBD10;
+}
+.f_sml {
+	font-size: .8em;
+}
+
+a.active {
+	color: #FCBD10!important;
+	text-decoration: underline!important;
+}
+
+.submenu a {
+	padding: 0 15px;
+}
+#itemCommentsAnchor .contentheading a,
+.post a,
+body #community-wrap a {
+	color: #2a93ff!important;
+	text-decoration: none;
+	font-weight:900!important;
+	
+}
+body #community-wrap a:hover {
+	text-decoration: underline;
+}
+
+h1,h2 {
+	display:block;
+	font-size:1em;
+	margin:0 auto;
+	padding:5px 10px 10px;
+	text-align:center;
+}
+body #community-wrap h2 {
+	padding-left:0px;	
+}
+
+/* Tooltips */
+.tool-tip {
+	color: #000000;
+	float: left;
+	border: 1px solid #90b402 !important;
+	padding: 5px;
+	background: #f3fde0 url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/tooltip-bg.gif) repeat-x top left !important;
+	max-width: 200px;
+}
+.tool-title {
+	padding: 0;
+	margin: 0;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background: transparent url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/tooltip-arrow.gif) no-repeat !important;
+	font-size: 100%;
+	font-weight: bold;
+}
+.tool-text {
+	margin: 0;
+	font-size: 100%;
+}
+
+ul, li{
+	margin:0px;
+	padding:0px;
+	list-style-type: none;
+}
+
+ol li {
+	list-style-type:decimal;
+	margin-left:15px;
+}
+
+.allow_li ul li {
+	list-style-position:outside;
+	list-style-type:circle;
+	margin-left:20px;
+}
+
+#side-bar ol li {
+	list-style-type: none;
+	margin-left:0px;	
+}
+
+.itemSocialLinksBlock {
+	padding-bottom:10px;
+}
+
+#message {
+	margin-bottom:20px;
+	background: #000000;
+}
+
+#message .content {
+	padding:20px;
+}
+
+
+
+ul.pagination {
+	border-top: 5px solid #FCBD10;
+	display: block;
+	padding: 20px;
+	text-align: center;
+	/* background: #000000; */
+}
+ul.pagination li {
+	margin: 10px;
+	display: inline;	
+}
+
+.itemCommentsPagination .top {
+	position: absolute;
+	margin:25px;
+}
+
+.itemCommentsPagination .top a {
+	text-indent:-999em;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/images/stories/icons/arrow_up.png) no-repeat;
+	display: block;
+	width:16px;
+	height:16px;	
+}
+
+.itemCommentsPagination .more a {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+
+/** NEWS **/
+div#newsMenu {
+	float:left;
+	width:250px;	
+	margin:0px 20px 20px 20px;
+	background:#000000!important;
+}
+
+div#newsContent {
+	float:right;
+	margin-right:20px;
+	width:650px;
+	display: block;
+	margin-bottom: 20px;	
+	}
+
+div#newsMenu, div#newsContent {
+	margin-top:20px;	
+}
+
+div#newsItem {
+	background: #000000;
+}
+
+div#newsItem a {
+	color: #2A93FF !important;
+}
+div#newsItem a:hover {
+	text-decoration:underline;	
+}
+
+div#newsItem .catItemDateCreated {
+	float: right;	
+	font-size: .8em;
+	margin-top:5px;
+}
+div#newsItem .catItemRatingBlock {
+	float: left;
+	height: auto;
+}
+
+div#newsItem h1 {
+	font-size: 1em;	
+	background-repeat: no-repeat;
+}
+
+div#newsItem > div,
+div#itemCommentsAnchor > div#commentContainer
+ {
+	margin:15px;	
+}
+
+div#itemCommentsAnchor {
+	margin-top:20px;	
+}
+
+#verify div#itemCommentsAnchor {
+	width: 650px!important;
+	margin: 0 auto;
+}
+
+div#newsItem > div.contentheading {
+	margin:inherit!important;
+	margin-right: 0px!important;
+}
+div#newsMenu ul#newsMenuList .contentheading {
+	border-bottom:none!important;
+}
+
+div#newsMenu ul#newsMenuList > li > ul {
+	border-top:5px solid #FCBD10 !important;
+}
+
+#newsItem .newsItemCategory {
+	font-size: .8em;	
+}
+#achievements_type_container,
+#inventory_type_container,
+#newsMenu #newsitemcat_container {
+	margin-top:5px!important;
+	outline-style:none;
+}
+
+#achievements input.selectbox {
+	width: 320px!important;	
+}
+
+#newsMenu #newsitemcat_container ul li {
+	font-size: inherit!important;
+	height: inherit!important;
+	padding: 2px;
+	min-height:0px!important;
+}
+
+#newsMenu > ul li.nodisplay {
+	display: none;	
+}
+
+#itemCommentsAnchor {
+	/*
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bg_black_white.gif);
+	background-repeat:repeat-x;
+	*/
+	background: #000000;
+}
+
+#itemCommentsAnchor #commentContainer {
+	margin:15px 0!important;
+	clear:both;
+}
+#itemCommentsAnchor #commentContainer > ul {
+	margin:0 15px;	
+}
+#newsMenu > ul li.viewall {
+	border-top:5px solid #FCBD10 !important;
+	background:#000000;
+	overflow:visible;
+	height:auto!important;
+}
+#newsMenu > ul li.newsItemCat_0 div {
+	width:100%!important;	
+}
+
+#newsMenu > ul li.viewall a {
+	display: inline!important;
+	float: right;
+	width: 30px;
+	text-indent:-999em;
+	padding:0!important;
+}
+#newsMenu > ul li.viewall a.newsNext {
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_next.png) no-repeat 6px 15px;
+}
+
+#newsMenu > ul li.viewall a.newsPrev {
+	float: left;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_prev.png) no-repeat 6px 15px;
+}
+
+#newsMenu > ul li.viewall a:hover {
+	background-position: 6px -70px;	
+}
+
+#newsMenu > ul li.viewall div {
+	display: block;
+	margin: 0 auto;
+	float: left;
+	height:41px;
+	width:190px;
+	text-align:center;
+	line-height:40px;
+}
+
+#newsMenu > ul {
+	background:#ffffff;
+}
+
+#newsMenu > ul li a {
+	border:none!important;	
+}
+
+#newsMenu > ul li#li_loading {
+	display: block;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/ajax-loader.gif) no-repeat 50% 50%;
+}
+
+
+/** COMMENTS **/
+#itemCommentsAnchor #commentsForm {
+	padding-left:20px;
+	padding-right:20px;
+	display: block;	
+}
+#itemCommentsAnchor .app-box-menu a{
+	display: none;	
+}
+
+div.commentForm {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#itemCommentsAnchor form {
+	margin: 0 auto;	
+}
+
+#itemCommentsAnchor #commentText,
+#community-wrap textarea#wall-message {
+	margin-left: 10px;
+	width: 370px;
+}
+
+#itemCommentsAnchor form input#button {
+	float:right;
+	margin:20px 40px;
+}
+
+#itemCommentsAnchor  .contentheading h2,
+.wallContainer  .contentheading h2 {
+	width: 50%;
+	margin: 0;
+	float: left;		
+}
+
+.contentheading .app-box-menus {
+	display: block;	
+	float: right;
+	font-size: .9em;
+	margin-top: 5px;
+}
+
+#itemCommentsAnchor .contentheading .app-box-menus {
+	font-size: inherit!important;	
+}
+
+#itemCommentsAnchor .contentheading .app-box-menus > div {
+	float: left;	
+}
+
+#itemCommentsAnchor .contentheading .app-box-menus .compose{
+	margin-right: 10px;	
+}
+
+div.post {
+	padding:10px;	
+	color: #000000;
+}
+#commentContainer .post {
+	padding-left:40px;	
+}
+
+.post  .wall_content {
+	float: left; 
+	display: block;
+	width:480px;
+}
+
+.post .wall_comments cite {
+	background: transparent;
+	padding-left: 10px;
+	width:430px!important;
+}
+
+.post div.ctitle a {
+	color:#3298fb;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.post  .ctitle {
+	float: left; 
+	display: block;
+	width: 60px;	
+}
+
+.post .wall_content blockquote {
+    background-color:#B7E0FF;
+    border:3px solid #ffffff;
+    margin:0;
+    -webkit-border-bottom-left-radius:8px;
+    -webkit-border-bottom-right-radius:8px;
+    -moz-border-radius-bottomleft:8px;
+    -moz-border-radius-bottomright:8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding:10px;
+    width: 460px;
+    color: #000000;
+    word-wrap: break-word;
+}
+.post blockquote {
+	color: #000000;
+}
+
+
+
+.post cite {
+	position: relative;
+	margin: 0px;
+	padding: 7px 0px 0px 50px;
+	margin-bottom:5px;
+	top: -3px;
+	background: transparent url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/tip-rounded.gif) no-repeat 20px 0;
+	font-style: normal;
+	font-size: .8em;
+	color: #ffffff;
+	display: block;
+}
+.post cite a.showComments {
+		float: right;
+		display: none;
+}
+
+#itemCommentsAnchor #comment-form label.formComment {
+	text-indent:-999em;
+	display: block;		
+}
+
+#itemCommentsAnchor #comment-form textarea {
+	clear:left;
+	width: 450px;
+	margin-left:75px;
+}
+
+div.itemCommentsForm form span#formLog {
+	float:left;
+	font-weight:bold;
+	margin:30px 0 0 79px;
+}
+
+div#itemCommentsAnchor .noComments p {
+	padding:0 20px 20px 20px;	
+}
+
+/* CHALLENGES */
+.appsFriends blockquote,
+.challenge blockquote {
+	font-size:.9em;
+	margin-left:10px;
+	margin-right:10px;
+}
+.challenge > ul {
+	margin:10px;
+	font-size: .9em;
+}
+
+#challenge_block {
+	font-size: .9em;	
+}
+
+.challenge ul li {
+	line-height: 130%;	
+}
+
+.challenge dl dt {
+	margin-top: 8px;
+	margin-left:15px;	
+}
+
+.challenge dl dd {
+	margin-left:15px;	
+}
+
+.challenge ul li ul li{
+	line-height: 130%;
+}
+.challenge .pagination {
+	padding:10px;
+	font-size: .9em;
+}
+.challenge .pagination li {
+	margin:0px;
+}
+.challenge .pagination li.challenge_prev,
+.challenge .pagination li.challenge_next {
+	display: none;	
+}
+.challenge .pagination li.challenge_prev {
+	margin-right:10px;	
+}
+.challenge .pagination li.challenge_next {
+	margin-left:10px;	
+}
+.challenge > ul > li.nodisplay {
+	display: none;
+}
+#challenge_block {
+	margin:25px;
+}
+#challenge_block > ul.challenges > li {
+	margin-bottom:20px!important;
+	padding-left:320px;
+	background-repeat: no-repeat;
+	min-height:180px;
+}
+#challenge_block ul.challenges li {
+	margin-bottom:10px;	
+}
+#challenge_block h3,
+#challenge_block h3 a,
+#challenge_block dt,
+div.challenge dt {
+	
+	color: #FCBD10!important;
+	font-weight: auto;
+}
+div.challenge dt span,
+#challenge_block dt span {
+	color: #ffffff!important;	
+}
+#challenge_block dl dd,
+#challenge_block dl dt {
+	margin-left: 0px;
+}
+#challenge_block dl dt {
+	margin-top:10px;
+}
+#challenge_block > ul.challenges > li > div,
+#challenge_block > ul.challenges > li > dl {
+	float: left;
+	width:45%;
+}
+#challenge_block > ul.challenges > li > dl {
+	margin-left: 5%;	
+}
+#homeBottom > .item_list,
+div.profile-right div.fullImage,
+#g-player-games-page #gamesContainerSub div.item_list {
+
+	margin-bottom: 20px;
+	margin-right: 0px;
+	background-repeat: no-repeat;
+	width: 294px;
+	height:218px;
+	background-position: 0px 50px;
+	background-color: #000000;
+}
+
+#homeBottom > .item_list,
+div.profile-right div.fullImage,
+#g-player-games-page #gamesContainerSub div.item_list,
+#g-player-audio, #g-player-video, #g-player-games {
+	float: left;
+	width: 294px;
+}
+
+/* LOCKED GAMES ON THE ACTUAL GAME PLAY PAGE */
+#g-player-games-page #gameContainerMain #gamesContainerSub {
+	width: 640px;
+	margin: 0 auto;	
+}
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list {
+	width:640px;
+	height:400px;
+}
+#g-player-games-page #gameContainerMain #gamesContainerSub div.gameLocked {
+	background-position: 600px 15px;
+}
+
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list a.gameLink, 
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list a.gameLocked {
+	width: 640px;	
+	height:350px;
+}
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list a.gameLocked {
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/trans-75-640px-75px.png) no-repeat scroll left bottom
+}
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list a.gameLocked span.gameLocked {
+	width: 640px;
+	padding-top:280px;	
+	background-position: 0px 280px;
+}
+#g-player-games-page #gameContainerMain #gamesContainerSub div.item_list a.gameLink span {
+	width: 615px;	
+}
+/* END LOCKED GAMES ON THE ACTUAL GAME PLAY PAGE */
+
+#homeBottom > .item_list > a,
+div.profile-right div.fullImage a,
+#g-player-games-page #gamesContainerSub div.item_list a.gameLink,
+#g-player-games-page #gamesContainerSub div.item_list a.gameLocked,
+#container .gallery .item_list .catItemCommentsLink a {
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/trans-75-300px-40px.png) no-repeat left bottom;
+	display:block;
+	height:168px;
+	width:300px;	
+}
+
+div.profile-right #challenges_most_played div.fr {
+	font-size:1em;
+	margin-top:6px;
+}
+
+div.profile-right #challenges_most_played .contentheading span {
+	color: #FCBD10;
+}
+
+#homeBottom > .item_list > a span,
+div.profile-right div.fullImage a span,
+#g-player-games-page #gamesContainerSub div.item_list a.gameLink span,
+#container .gallery .item_list .catItemCommentsLink span {
+	color:#3491EE;
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding-top:140px;
+	size:1.1em;
+	text-align:right;
+	width:285px;
+	font-weight:900;
+}
+#homeBottom div.news-scroll {
+	height: 135px;
+	overflow: hidden;	
+}
+.scroll-actions,
+.scroll-actions-booklet {
+	padding:0px;
+	display:block;
+	height: 35px;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/trans-75-300px-35px.png) no-repeat scroll left bottom;
+}
+.scroll-actions a,
+.scroll-actions-booklet a {
+	font-size:.9em;
+	cursor: pointer;	
+	width:30px;
+	height: 30px;
+	text-indent: -999em;
+	display: block;
+	margin: 10px 10px 0px 10px;
+}
+.scroll-actions .nextPage,
+.scroll-actions-booklet .nextPage {
+	float: right;
+	background:  url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_next.png) no-repeat scroll 10px 0px;
+}
+.scroll-actions a:hover,
+.scroll-actions-booklet a:hover {
+	background-position:10px -85px;
+
+}
+
+.scroll-actions .disabled,
+.scroll-actions-booklet .disabled {
+	visibility: hidden;	
+}	
+
+.scroll-actions .prevPage,
+.scroll-actions-booklet .prevPage {
+	background:  url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_prev.png) no-repeat scroll 10px 0px;
+	float: left;	
+}
+
+#homeBottom .contentheading .k2FeedIcon_single a span {
+	width: 30px;	
+	height: 30px;	
+	margin-top: 0px;
+	padding-top:0;
+	display:none;
+}
+
+
+
+div.profile-right div.fullImage a span {
+	text-align:center;
+}
+
+ul.challenges_completed dl.players dt{
+	padding-left:20px;
+	background-repeat: no-repeat;
+}
+ul.challenges_completed dl.players dt.score_1,
+dd.gold {
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/award_star_gold_2.png);
+}
+ul.challenges_completed dl.players dt.score_2,
+dd.silver {
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/award_star_silver_3.png);
+}
+ul.challenges_completed dl.players dt.score_3,
+dd.bronze {
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/award_star_bronze_3.png);
+}
+
+dd.bronze {
+	background-repeat: no-repeat;
+	text-indent: 20px;	
+}
+
+.catItemIntroText img {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#addthis img{
+	padding-bottom:0;
+	padding-right:0px;
+}
+
+#fbc {
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/buttons/facebook.gif);
+	display: block;
+	width: 169px;
+	height: 20px;
+	text-indent: -999em;
+}
+
+#homeTop #fbc {
+	margin-top: 15px;
+}
+
+#friend-feed ul li a {
+	border: 0;
+	display: inline;
+}
+
+#friend-feed div.contentheading {
+	border-bottom-color: #00FF00!important;
+}
+
+#friend-feed h2{
+	background-image:url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/gplayer.gif );
+	background-repeat: no-repeat;
+}
+#friend-feed.item_list ul{
+	height:75px;
+	overflow: hidden;
+	color: #000000;
+	margin:0 20px;
+}
+#friend-feed.item_list li{
+	margin-top:1px;
+	/* margin-right: 20px; */	
+	float:left;
+	width: 25%;
+}
+
+#friend-feed.item_list h4 {
+	margin-bottom: 5px;	
+	width:90%;
+}
+
+#friend-feed.item_list li blockquote {
+	width:90%;
+	margin:0;
+	padding:0;
+}
+
+#friend-feed.item_list li a {
+	padding: 0;
+	color: #2A93FF;
+}
+#friend-feed.item_list li a:hover {
+	background-color: #fff;
+}
+
+div.k2FeedIcon_single{
+	position: absolute;	
+	margin-top:-30px;
+	margin-left:250px;
+}
+div.k2FeedIcon_main {
+	float: left;
+}
+div.k2FeedIcon_single a,
+div.k2FeedIcon_main a {
+	padding-bottom:10px;
+	width:16px;
+	display: block;
+	text-indent:-999em;
+	background: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/feed.png) no-repeat 0px 5px;	
+	height:16px;
+}
+
+div#newsMenu > div > form {
+	float: left;	
+	width:210px;
+} 
+
+#general {
+	width:650px;
+}
+
+#community-wrap #general {
+	margin: 0 auto;	
+}
+
+#sbox-window div#general {
+	margin-top:0!important;
+	margin-bottom: 0!important;
+	width:98%;
+	border:0;
+}
+#sbox-content {
+	background-color:#000!important;
+	overflow: hidden;	
+}
+
+#sbox-window div#general div.content-main {
+
+}
+
+#sbox-content {
+		overflow:auto;
+}
+
+#sbox-content > div {
+	background: #000000;
+	overflow: hidden;
+}
+
+
+div#community-wrap div#newsMenu {
+	margin-top: 0px;	
+	margin-right: 0px;
+	float: none;
+	width: 600px;
+}
+
+#band_message .newsItemBody,
+#band .newsItemBody
+ {
+	padding-top:15px;
+	clear: left;	
+}
+
+div#community-wrap div.k2FeedIcon_single {
+	margin: 0;	
+}
+
+div#band #newsContent #itemCommentsAnchor #commentContainer {
+	clear: left;	
+}
+
+#band #newsContent {
+	clear:left;
+	margin-right:0;
+	width:590px;
+}
+
+#band #itemsListSecondary ul {
+	margin:15px;	
+}
+
+#band div.profile-details dd{
+	clear:left;
+	margin-left:0;
+}
+
+#band #itemsListSecondary ul li {
+	line-height: 140%;	
+}
+
+.profile-right #ident {
+	margin-top:0px;	
+	margin-bottom:10px;
+	-webkit-border:0;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-bottom-right-radius: 14px;
+	-webkit-border-bottom-left-radius: 14px;
+	-moz-border-radius-bottomright: 14px;
+	-moz-border-radius-bottomleft: 14px;
+	border-bottom-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	padding-bottom:10px;
+}
+
+.profile-right #ident a.commentlink {
+	display: block;
+	margin-top:15px;
+	text-align:center;
+}
+body #community-wrap #band  div#profile_right  {
+	width:190px;
+	height:250px;
+	display: block;
+}
+
+body #community-wrap #band  div.profile-box  {
+	width:360px;
+	min-height: 250px;
+}
+
+body #community-wrap #band div.profile-avatar img {
+	max-height:150px;
+	max-width:150px;
+}
+
+#band #commentsForm #comment-form textarea {
+	margin-left:20px;
+}
+
+#band .profile-details li {
+	height: 45px;	
+}
+
+#band .profile-details li img {
+	height:40px;
+	margin-right:10px;
+	margin-top:3px;
+}
+#band .profile-details li span {
+	display:block;
+	margin-left:40px;
+	margin-top:-32px;
+}
+
+#band #itemCommentsAnchor .noComments .wall-add-comment {
+	display: inline;
+}
+
+#subdivision .wall_content,
+#band .wall_content {
+	margin-left:20px;	
+	width:410px;
+}
+
+#subdivision .wall_content blockquote,
+#band .wall_content blockquote {
+		width:410px;
+}
+
+.profile-right #tweats .twtr-ft {
+	display:none;	
+}
+.profile-right #twtr-ft {
+	width:280px;
+	display: block;
+	background-color:#333333 !important;
+	padding:10px;
+}
+
+.profile-right #twtr-ft span {
+	display: block;
+	float:right;
+	font-size:.9em;
+}
+
+div#band .extra_links {
+	padding-top:15px;	
+}
+
+div#band #newsItem {
+	padding-bottom:20px;
+}
+
+#band .profile-main > div.itemList  {
+	clear: left;
+}
+
+
+#band_message #newsItem,
+#band_message #itemCommentsAnchor {
+	width: 650px;	
+	margin: 0 auto;
+}
+
+#band_message #newsItem div.contentheading h2 {
+	float:right;
+	width:540px;
+}
+
+#band_message #newsItem {
+	margin-bottom:20px;	
+}
+
+#band_message #addthis{
+	margin-top:0;	
+	padding-top:0;
+}
+
+#band_message a.bt_band img {
+	margin-top:-10px;
+}
+
+.item_prev_next {
+	margin-top:20px;	
+}
+
+.item_prev_next a.next {
+	background:url("/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_next.png") no-repeat scroll right 1px transparent;
+	float:right;
+	padding-right:22px;
+}
+.item_prev_next a.next:hover {
+	background-position: right -84px;	
+}
+
+.item_prev_next a.prev {
+	background:url("/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/icons/control_prev.png") no-repeat scroll 0 1px transparent;
+	float:left;
+	text-indent:18px;
+}
+.item_prev_next a.prev:hover {
+	background-position: 0 -84px;	
+}
+
+#tweetenator #general {
+	width: 980px;
+}
+
+#tweetenator #general .contentheading h2 {
+	text-align: left;
+	float: left;
+}
+
+#tweetenator #general #share-links {
+	float: right;
+	margin-top:5px;
+}
+div#murdoc_bubble{
+	margin:20px;
+}
+div#murdoc_bubble p {
+	background: #ffffff;
+	padding:30px;
+	color:#000000;
+}
+
+div#murdoc_bubble img {
+	float: left;
+
+	background:#000000;
+	padding-left:0px !important;
+	padding-right:30px!important;
+	padding-bottom:30px!important;
+}
+
+div#murdoc_bubble:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#community-wrap #content-top .fr .k2FeedIcon_single {
+	text-indent: 0px!important;	
+	margin-left:-10px;
+}
+
+
+#container .main-left {
+	float: left;
+}
+
+#container .main-left .infobox {
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+#container .main-right .subboxBlack p,
+#container .main-left .newsItemBody,
+#container .main-left .newsItemFloat {
+	padding:20px;	
+}
+
+
+
+#container .main-right {
+	width:296px;
+	float: right;
+	margin-top:20px;
+}
+
+#container .main-right div.subboxBlack {
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+.wallbox {width: 267px;height: 150px;float: left;margin-bottom: 10px;}
+.wallbox img {vertical-align: top; margin-right: 5px; float: left;}
+.wallbox a {color: #cccccc; display: inline-block; margin-bottom:3px;}
+.wallbox a:hover {text-decoration: underline;}
+#container .gallery .item_list_container {
+	padding:20px 0px;	
+}
+#container .cat188 .newsItem,
+#container .cat187 .newsItem  {
+	width:	990px;
+}
+
+#container .gallery .item_list {
+	margin-left:20px;
+	margin-bottom:20px;
+	width:294px;
+	height:216px;	
+	overflow: hidden;	
+	float:left;
+	background-position:0px 50px;
+	background-color: #000000;
+}
+
+#container .gallery .item_list .catItemCommentsLink {
+	display: block;
+	width:100%;
+	height:200px;		
+}
+
+.gallery .contentheading .tb_sub,
+.subdivision .contentheading .tb_sub,
+#subdivision .contentheading .tb_sub {
+	float:left;
+	width:70px;
+}
+.gallery .contentheading .tb_sub,
+.subdivision .contentheading .tb_sub {
+	margin-top:-5px;	
+}
+#wrapper .gallery h2 { 
+	text-align:center!important;	
+	color: #ffffff!important;
+}
+
+.gallery .newsItemFloat,
+.gallery  .newsItemBody,
+.subdivision .infobox  .newsItemFloat,
+.subdivision .infobox  .newsItemBody {
+	margin:15px;
+}
+.gallery div.catItemRatingBlock,
+.subdivision div.catItemRatingBlock {
+	height:25px!important;	
+		float: left;	
+}
+
+#side-bar .style_news ul li a span,
+#newsMenu ul li a span {
+display: block;
+float: left;
+width:200px;
+}
+
+#side-bar .style_news ul li a span{
+width:245px;
+}
+
+#addToJumpList {
+    display: block;
+    width:16px;
+    height:16px;
+    float:left;
+    background: url(/web/20120503231954im_/http://cdn.gorillaz.com/images/stories/icons/star.png) no-repeat;
+    margin-left:20px;
+}
+
+#addToJumpList.remove {
+    background: url(/web/20120503231954im_/http://cdn.gorillaz.com/images/stories/icons/star_remove.png) no-repeat!important;
+}
+
+#g-player-audio-page #addToJumpList {
+    margin-left:0px;
+    margin-right: 10px;
+}
+
+#addToJumpList a {
+    display: block;
+    text-indent:-999em;
+}
+
+sapn.itemVideo {
+    display: block;
+    margin:10px auto;
+}
+#content-main video {
+    margin:10px 0px;
+}
+video {
+    outline-style: none;
+}
+a.viewonyoutube {
+    float: right;
+    color:#BBBBBB;
+    font-size:.8em;
+    font-weight:bold;
+    outline:0 none;
+}
+span.none, div.none {
+    display:none !important;
+}
+
+#track_name {
+    color:#000000;
+    display:block;
+    font-weight:900;
+    height:20px;
+    margin-left:42px;
+    margin-top:-55px;
+    overflow:hidden;
+    position:absolute;
+    width:230px;
+}
+
+
+#track_name div {
+    white-space:nowrap;
+    position: absolute;
+}
+
+
+#audio-controller a#a_play {
+    background-image: url(/web/20120503231954im_/http://cdn.gorillaz.com/images/stories/icons/play-pause.gif);
+    display:block;
+    height:28px;
+    margin-left:285px;
+    margin-top:-61px;
+    position:absolute;
+    text-indent:-999em;
+    width:28px;
+}
+
+#audio-controller a.pause {
+    background-position: -69px 50%
+}
+
+#wrapper #album #track-list ol li.playing a {
+    background-image: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/play-button-paused.png) !important;
+}
+
+#wrapper #album #track-list ol li.playing a.paused {
+    background-image: url(/web/20120503231954im_/http://cdn.gorillaz.com/templates/blank_j15/images/play-button-hover.png) !important;
+}
+
+a.dlie9 {
+    display: block;
+    float: left;
+    width:300px;
+    height:30px;
+    overflow: hidden;
+}
+
+#g-player-audio-page a.dlie9 {
+    margin-left:20px;
+}
+
+#homeLinks a.dlie9 {
+    margin-left:35px;
+    margin-top:-4px;
+}
+
+#side-bar a.dlie9 {
+    margin-left:2px;
+}
+
+#addthis a {
+    color: #000000!important;
+}
+#addthis a span {
+    color:  #ffffff!important;
+}
+
+#addthis {
+ float: right;
+}
+
+/*
+     FILE ARCHIVED ON 23:19:54 May 03, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:35:14 Aug 22, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 87.036
+  exclusion.robots: 0.102
+  exclusion.robots.policy: 0.092
+  cdx.remote: 0.079
+  esindex: 0.019
+  LoadShardBlock: 57.466 (3)
+  PetaboxLoader3.datanode: 128.659 (4)
+  load_resource: 131.544
+  PetaboxLoader3.resolve: 54.251
+*/

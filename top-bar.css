@@ -1,0 +1,217 @@
+@CHARSET "ISO-8859-1";
+
+#top-bar{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	background-image:URL(../../images/bgs/top-bar-bg.png);
+	background-repeat:repeat-x;
+	height:28px;
+	z-index:3;
+	width: 100%;
+	color:#ffffff!important;
+        width: 1024px;
+}
+#top-bar .menu {
+	padding: 0;	
+}
+
+#top-bar li{
+	padding:0px;
+	margin:0px;
+	display:block;
+	float:left;
+}
+#top-bar li.not-boxed{
+	font-size:0.7em;
+}
+
+#top-bar li.item18 a {
+	border:none;	
+	font-size:.7em;
+	padding-right:4px;
+	color:#ffffff;
+	padding-top:6px;
+	height:15px;
+}
+
+#top-bar li a,
+#top-bar a.login_control {
+	display:block;
+	padding:4px;
+	border-bottom:1px solid #333;
+	border-left:1px dashed #333;
+	text-decoration:none;
+	color: #66CCFF;
+}
+
+
+#top-bar li.not-boxed a{
+	display:inline;
+	display:inline-block;
+	vertical-align:middle;
+	border:none;
+}
+
+#top-bar a:hover{
+	background-color:#0066CC;
+	color:#000000;
+	border-color:#666;
+}
+#top-bar a:active{
+	background-color:#900;
+	color:#000000;
+	border-bottom:1px solid #666;
+}
+
+#top-bar li.item13 {
+	float:right;
+	margin-right:5px;	
+}
+
+#top-bar li.fbcc {
+	float:right;
+	margin-right:0px;
+}
+#top-bar li.fbcc a {
+    padding: 0px;
+}
+#top-bar li.fbcc #fbc {
+    background: url(/web/20120503233206im_/http://cdn.gorillaz.com/templates/blank_j15/images/buttons/facebook.lock.jpg) no-repeat;
+    width:109px;
+    height:24px;
+}
+
+#top-bar img{
+	width: 16px;
+	height: 16px;
+	vertical-align:top;
+	margin-right:2px;
+	margin-left:2px;
+}
+
+#top-bar div img, #top-bar .no_base_border img{
+	vertical-align:top;
+	margin-right:2px;
+	margin-left:2px;
+}
+
+#top-bar .end{
+	border-right:1px dashed #333;
+}
+
+a.fbconnect_login_button img {
+	width: auto!important;
+	height: auto!important;
+}
+#top-bar form#login_horz {
+	display: none;
+	float:left;
+}
+
+#top-bar a.login_control {
+	float:right;
+	
+	text-indent: 10px;
+}
+
+#top-bar a#close_loginbtn {
+	display: none;
+}
+
+#login_horz {
+	font-size: .8em;	
+}
+
+#login_horz span {
+	font-size: .8em;		
+}
+
+#login_horz div {
+	display: inline;
+}
+
+#login_horz div.pass_contain {
+	margin-left:10px;	
+}
+
+#login_horz div input.inputbox {
+	padding:0px;
+	background-image:url(/web/20120503233206im_/http://cdn.gorillaz.com/templates/blank_j15/images/bgs/bg_white_50_trans.png) !important;
+	background-color: transparent;
+	border-color: #2A93FF;
+        border-width:2px;
+}
+
+#top-bar #login_horz div input.empty {
+    border-color: #FCBD10;
+    border-width:2px;
+}
+
+#login_horz input.button {
+	float: left;
+	margin-top:0;
+	padding: 0;
+}
+
+#login_horz fieldset {
+	display: inline;
+	float: left;
+	padding-top:2px;
+}
+
+p#login_error{
+	margin-top:4px;
+	padding:0px;
+	float:left;
+	margin-left: 10px;
+	font-weight:900;
+}
+
+#loginContainerHorz {
+	float: right;
+}
+div#jflanguageselection #_input {
+	width:100px !important;
+	margin-top:0px !important;
+}
+div#jflanguageselection #_container {
+	margin-top:2px;
+}
+div#jflanguageselection #_container ul {
+	overflow: hidden;
+}
+div#jflanguageselection #_container li {
+	padding:2px;
+	width:100%
+}
+form#languageChange,
+input#changelang {
+	float: right;
+}
+
+form#languageChange input#changelang{
+	padding:0;
+	margin-left:5px;
+	margin-top:0;
+}
+/*
+     FILE ARCHIVED ON 23:32:06 May 03, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:35:14 Aug 22, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 284.155
+  exclusion.robots: 0.078
+  exclusion.robots.policy: 0.069
+  cdx.remote: 0.055
+  esindex: 0.008
+  LoadShardBlock: 220.749 (3)
+  PetaboxLoader3.datanode: 264.876 (4)
+  load_resource: 225.021
+  PetaboxLoader3.resolve: 126.937
+*/

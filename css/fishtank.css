@@ -1,0 +1,117 @@
+#fishtank {
+	background: url('../images/fishtank/bg_fishtank.jpg') no-repeat center center;
+	width: 1280px;
+	height: 720px;
+}
+
+#fishtank .fish1 {
+		position: absolute;
+		left: 100px ;
+		top: 500px;
+		-webkit-transition: opacity 100ms linear, -webkit-transform 1s linear;
+		opacity: 0;
+}
+
+#fishtank .fish2 {
+		position: absolute;
+		left: 100px ;
+		top: 300px;
+		-webkit-transition: opacity 100ms linear, -webkit-transform 1.2s linear;
+		opacity: 0;
+}
+
+#fishtank .fish3 {
+	position: absolute;
+	left: 100px ;
+	top: 400px;
+	-webkit-transition: opacity 100ms linear, -webkit-transform 1.4s linear;
+	opacity: 0;	
+}
+
+#fishtank .pinky {
+	position: absolute;
+	left: 950px ;
+	top: 630px;
+	-webkit-transform-origin-x: 9px ;
+	-webkit-transform-origin-y: 55px ;
+	-webkit-transition: opacity 100ms linear, -webkit-transform 750ms linear;	
+}
+
+#fishtank .can {
+	position: absolute;
+	left: 1070px;
+	top: 600px;
+	opacity: 1;
+}
+
+#fishtank .lid {
+	position: absolute;
+	left: 1070px;
+	top: 600px;
+	opacity: 1;
+}
+
+#fishtank .tongs {
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	-webkit-transition: left 1s linear, -webkit-transform 1s linear;
+	opacity: 1;
+}
+
+#fishtank .spam {
+	position: absolute;
+	transform-origin-y: 200px ;
+	-webkit-transition: opacity 500ms linear, -webkit-transform 500ms linear;;
+	opacity: 0;
+}
+
+#fishtank .score {
+	position: absolute;
+	background: url(../images/fishtank/game_spampanel.png) no-repeat left top ;
+	left: 200px;
+	top: 00px;
+	width: 260px;
+	height: 110px;
+	font-family: "Arial";
+	font-size: 40pt;
+	color: white;
+	text-align: center;
+	padding:20px; border-style:double;
+	border: 0;
+}
+
+#fishtank .score2 {
+	position: absolute;
+	background: url(../images/fishtank/scoreboard.png) no-repeat center center;
+	left: 500px;
+	top: 10px;
+	width: 290px;
+	height: 88px;
+	font-family: "Arial";
+	font-size: 20pt;
+	color: white;
+	text-align: center;
+}
+
+#fishtank .score3 {
+	position: absolute;
+	background: url(../images/fishtank/scoreboard.png) no-repeat center center;
+	left: 800px;
+	top: 10px;
+	width: 290px;
+	height: 88px;
+	font-family: "Arial";
+	font-size: 20pt;
+	color: white;
+	text-align: center;
+}
+
+#fishtank .hood {
+	position: absolute;
+	left: 101px ;
+	top: 125px ;
+	width: 1078px;
+	height: 19px;
+	background: #768695;
+}

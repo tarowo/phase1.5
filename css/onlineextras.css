@@ -1,0 +1,16 @@
+#onlineextras {
+	background: url(../images/onlineextras/bg_online.jpg) ;
+}
+
+/* Buttons */
+
+#onlineextras .buttons > .back {
+  left: 54px;
+  top: 34px;
+}
+
+#onlineextras .link {
+	position: absolute;
+	left: 689px;
+	top: 648px;
+}

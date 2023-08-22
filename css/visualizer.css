@@ -1,0 +1,86 @@
+@-webkit-keyframes 'fade' {
+    0%   { opacity: 0; }
+    15%   { opacity: 1; }
+    85%  { opacity: 1; }
+    100%   { opacity: 0; }
+}
+
+#visualizer {
+  background: black; 
+}
+
+/* Sliding View */
+#visualizer .sliding-view {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-transition: -webkit-transform 1s ease-out, opacity 1s ease-in;
+}
+
+#visualizer .sliding-view-element {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 720px;
+  width: 1280px;
+  text-align: center;
+  opacity: 0 !important;
+  -webkit-transition: -webkit-transform 1s, opacity 1s ease-in;
+}
+
+#visualizer .sliding-view-element-focused {
+  opacity: 1 !important;
+}
+
+#visualizer .sliding-view-element-focused img {
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+#visualizer .sliding-view-element-hidden {
+  display: none;
+}
+
+#visualizer .counter {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+/* Arrows */
+
+#visualizer .left-arrow {
+  left: 67px;
+  top: 527px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#visualizer .right-arrow {
+  left: 1169px;
+  top: 527px;
+  -webkit-transform: scaleX(-1); 
+  opacity: 0;
+  pointer-events: none;
+}
+
+#visualizer .left-arrow,
+#visualizer .right-arrow {
+  -webkit-transition: opacity 500ms;
+}
+
+#visualizer .inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* dim the arrows when they're inactive on Apple TV */
+@media (-webkit-apple-tv) {
+  #visualizer .inactive {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,101 @@
+#videos {
+  background-image: url("../images/videos/bg_video.jpg");
+}
+
+/* Buttons */
+
+#videos > .buttons > .back {
+  left: 38px;
+  top: 20px;
+}
+
+/* Arrows */
+
+#videos .left-arrow {
+  left: 246px;
+  top: 539px;
+}
+
+#videos .right-arrow {
+  left: 1036px;
+  top: 539px;
+  -webkit-transform: scaleX(-1);
+}
+
+#videos .left-arrow,
+#videos .right-arrow {
+  -webkit-transition: opacity 500ms;
+  z-index: 10000;
+}
+
+#videos .inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* dim the arrows when they're inactive on Apple TV */
+@media (-webkit-apple-tv) {
+  #videos .inactive {
+    opacity: 1;
+  }
+}
+
+#videos .disableLinks {
+	display: none;
+	opacity: 0;
+  	pointer-events: none;
+}
+
+#videos .page-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 550px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#videos #pagenumber {
+	position: absolute;
+	left: 603px;
+	top: 657px;
+	width: 69px;
+	height: 18px;
+}
+
+#videos .page {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+#videos .div1of1 {	position: absolute;	left: 283px;	top: 90px; }
+#videos .div2of1 {	position: absolute;	left: 548px;	top: 90px; }
+#videos .div3of1 {	position: absolute;	left: 813px;	top: 90px; }
+#videos .div4of1 {	position: absolute;	left: 283px;	top: 314px; }
+#videos .div5of1 {	position: absolute;	left: 548px;	top: 314px; }
+#videos .div6of1 {	position: absolute;	left: 813px;	top: 314px; }
+
+#videos .div1of2 {	position: absolute;	left: 283px;	top: 90px; }
+#videos .div2of2 {	position: absolute;	left: 548px;	top: 90px; }
+#videos .div3of2 {	position: absolute;	left: 813px;	top: 90px; }
+#videos .div4of2 {	position: absolute;	left: 283px;	top: 314px; }
+#videos .div5of2 {	position: absolute;	left: 548px;	top: 314px; }
+#videos .div6of2 {	position: absolute;	left: 813px;	top: 314px; }
+
+#videos .div1of3 {	position: absolute;	left: 213px;	top: 133px; }
+#videos .div2of3 {	position: absolute;	left: 363px;	top: 133px; }
+#videos .div3of3 {	position: absolute;	left: 513px;	top: 133px; }
+#videos .div4of3 {	position: absolute;	left: 663px;	top: 133px; }
+#videos .div5of3 {	position: absolute;	left: 813px;	top: 133px; }
+#videos .div6of3 {	position: absolute;	left: 962px;	top: 133px; }
+#videos .div7of3 {	position: absolute;	left: 213px;	top: 332px; }
+#videos .div8of3 {	position: absolute;	left: 363px;	top: 332px; }
+#videos .div9of3 {	position: absolute;	left: 513px;	top: 332px; }
+#videos .div10of3 {	position: absolute;	left: 663px;	top: 332px; }
+#videos .div11of3 {	position: absolute;	left: 813px;	top: 332px; }
+#videos .div12of3 {	position: absolute;	left: 962px;	top: 332px; }
+
+

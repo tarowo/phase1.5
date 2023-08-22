@@ -1,0 +1,46 @@
+#story {
+	background: black;
+}
+
+#story .buttons > .back {
+  left: 54px;
+  top: 34px;
+}
+
+#book .page {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+/* Arrows */
+
+#story .left-arrow {
+  left: 55px;
+  top: 325px;
+}
+
+#story .right-arrow {
+  left: 1185px;
+  top: 325px;
+  -webkit-transform: scaleX(-1);
+}
+
+#story .left-arrow,
+#story .right-arrow {
+  -webkit-transition: opacity 500ms;
+  z-index: 10000;
+}
+
+#story .inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* remove the arrows for Apple TV */
+@media (-webkit-apple-tv) {
+  	#story .left-arrow, #story .right-arrow {
+    	opacity: 0;
+	  	pointer-events: none;
+  }
+}

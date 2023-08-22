@@ -1,0 +1,181 @@
+* {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.disableLinks {
+ pointer-events: none;
+}
+
+html {
+  position: relative;
+  min-width: 1280px;
+  min-height: 720px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#bleed {
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height:720px;
+}
+
+/* remove the bleed on Apple TV */
+@media (-webkit-apple-tv) {
+  #bleed {
+    background-image: none;
+  }
+}
+
+#navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 720px;
+  margin-left: -640px;
+  margin-top: -360px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#navigation > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  background-color: transparent;    
+  background-repeat: no-repeat;
+  background-position: left top;
+  z-index: 1;
+} 
+
+.buttons > .back,
+.buttons > .left-arrow,
+.buttons > .right-arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5000;
+} 
+
+.buttons > .back {
+  left: 61px;
+  top: 35px;
+}
+
+/* Scrollbars */
+
+#navigation ::-webkit-scrollbar {
+  width: 33px;
+}
+
+#navigation ::-webkit-scrollbar-track {
+  width: 33px;
+  background: black;
+  border: 3px solid #323232;
+}
+
+#navigation ::-webkit-scrollbar-track-piece:start {
+  margin-top: 6px;
+}
+
+#navigation ::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 6px;
+}
+
+#navigation ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+}
+
+/* Image faders */
+
+.image-fader {
+  position: absolute;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.image-fader > img {
+  -webkit-transition: opacity 0.25s;
+}
+
+.image-fader > img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-fader:hover > img:nth-of-type(2),
+.image-fader.tk-highlighted > img:nth-of-type(2) {
+  opacity: 1;
+}
+
+
+.image-fader:hover > img:nth-of-type(1),
+.image-fader.tk-highlighted > img:nth-of-type(1) {
+  opacity: 0;
+}
+
+/* Menu Navigation */   
+
+.navigation {
+  position: absolute;
+  background: url('../images/nav/panel_menu.png');
+  left: 0px;
+  bottom: -76px;
+  width: 1280px;
+  height: 76px;
+  z-index: 10000;
+	-webkit-transition-duration: 1s;
+}
+
+
+.navigation > div {
+  position: absolute;
+  top: 22px;
+}
+
+.navigation > .story {
+  left: 70px;
+}
+
+.navigation > .songs {
+  left: 218px;
+}
+
+.navigation > .videos {
+  left: 429px;
+}
+
+.navigation > .photos {
+  left: 545px;
+}
+
+.navigation > .credits {
+  left: 681px;
+}
+
+.navigation > .game {
+  left: 882px;
+}
+
+.navigation > .download {
+  left: 1035px;
+}
+
+/* remove the navigation from Apple TV */
+@media (-webkit-apple-tv) {
+  .navigation {
+    display: none;
+  }
+}

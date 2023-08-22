@@ -1,0 +1,160 @@
+#music {
+  background-image: url("../images/music/background.jpg");
+}
+
+/* arrows */
+
+#music .left-arrow {
+  left: 321px;
+  top: 210px;
+  -webkit-transform: scaleX(-1);
+}
+
+#music .right-arrow {
+  left: 967px;
+  top: 198px;
+}
+
+#music .lyrics-scrollcontainer {
+  position: absolute;
+  top: 76px;
+  left: 590px;
+  width: 337px;
+  height: 210px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+z-index: 1;
+}
+
+#music .musicmask {
+	position: absolute;
+	left: 137px;
+	top: 309px;
+	display: none;
+}
+
+@media (-webkit-apple-tv) {
+	#music .musicmask {
+		display: block;
+	}
+}
+
+#music .lyrics-container {
+  position: absolute;
+  width: 320px;
+  height: 210px;
+}
+
+#music .whitesquare {
+	position: absolute;
+	width: 25px;
+	height: 225px;
+	left: 910px;
+	top: 65px;
+	background: white;
+	display: none;
+}
+
+#music .arrowup {
+	position: absolute;
+	left: 911px;
+	top: 71px;
+}
+
+#music .arrowdown {
+	position: absolute;
+	left: 910px;
+	top: 270px;
+}
+
+/* Scrollbars */
+
+#music ::-webkit-scrollbar {
+  width: 10px; 
+}
+
+#music ::-webkit-scrollbar-track {
+  width: 10px;
+  border: 0px solid #ffffff;
+  background: none;
+}
+
+#music ::-webkit-scrollbar-track-piece:start {
+  margin-top: 14px;
+}
+
+#music ::-webkit-scrollbar-track-piece:end {
+
+}
+
+#music ::-webkit-scrollbar-track-piece:decrement {
+	background: #cccccc;
+}
+
+#music ::-webkit-scrollbar-track-piece:increment {
+	background: gray;
+}
+
+#music ::-webkit-scrollbar-thumb {
+  background: black;
+  cursor: pointer;
+  width: 10px;
+}
+
+#music .lyrics-photo {
+  position: absolute;
+  top: 77px;
+  left: 369px;
+  width: 204px;
+  height: 204px;
+}
+
+#music .play {
+  position: absolute;
+  left: 186px;
+  top: 581px;
+  z-index: 1000;
+}
+
+#music .songlist {
+  position: absolute;
+  width: 904px;
+  height: 160px;
+  left: 197px;
+  top: 350px;
+  -webkit-mask-image: url("../images/music/tracklist/mask.png");
+  overflow:hidden;
+}
+
+#music .songlist > .thelist {
+	position: absolute;
+	width: 904px;
+	height: 160px;
+	left: -20px;
+}
+
+#music .songlist > .thelist > div {
+	position: relative;
+	height: 18px;
+}
+
+#music .songlist > .scroll_bg {
+  position: absolute;
+  right: 0px;
+  top: 0px;	
+  z-index: 10000;
+}
+
+#music .songlist > .up {
+  position: absolute;
+  right: 47px;
+  top: 0px;	
+  z-index: 20000;
+}
+
+#music .songlist > .down {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;	
+  z-index: 20000;
+}

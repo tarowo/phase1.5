@@ -1,0 +1,46 @@
+#book {
+  background: url('../images/book/bg.jpg') no-repeat scroll top left;
+}
+
+#book .buttons .back {
+	top: 15px;
+	z-index: 9005;
+}
+
+#book .page {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+/* Arrows */
+
+#book .left-arrow {
+  left: 14px;
+  top: 325px;
+}
+
+#book .right-arrow {
+  left: 1230px;
+  top: 325px;
+  -webkit-transform: scaleX(-1);
+}
+
+#book .left-arrow,
+#book .right-arrow {
+  -webkit-transition: opacity 500ms;
+  z-index: 10000;
+}
+
+#book .inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* remove the arrows for Apple TV */
+@media (-webkit-apple-tv) {
+  	#book .left-arrow, #book .right-arrow {
+   		opacity: 0;
+	  	pointer-events: none;
+  }
+}
